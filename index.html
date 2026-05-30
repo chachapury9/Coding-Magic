@@ -37,12 +37,19 @@
         </form>
         <p class="iyc-conclusion"></p>
       </section>
+      <section class="word-guesser"></section>
       <section class="rock-paper-scissors">
         <h2 class="title">Камінь - ножиці - папір</h2>
         <ul class="rps-options">
-          <li class="rps-option" id="rps-option"><svg></svg></li>
-          <li class="rps-option" id="rps-option"><svg></svg></li>
-          <li class="rps-option" id="rps-option"><svg></svg></li>
+          <li class="rps-option" id="rock">
+            <button><svg></svg></button>
+          </li>
+          <li class="rps-option" id="scissors">
+            <button><svg></svg></button>
+          </li>
+          <li class="rps-option" id="paper">
+            <button><svg></svg></button>
+          </li>
         </ul>
         <p class="rps-conclusion"></p>
         <p class="rps-ai-choice"></p>
@@ -62,5 +69,7 @@
       </section>
     </main>
     <footer></footer>
+    <script type="module" src="./js/intercalary.js"></script>
+    <script type="module" src="./js/rock-paper-scissors.js"></script>
   </body>
 </html>
