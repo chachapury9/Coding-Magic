@@ -30,11 +30,35 @@
       <h2 class="site-title">Популярні інтерактивні ігри</h2>
       <br />
       <section class="intercalary-year-check">
+        <h3 class="title">Перевір в який рік ти народився</h3>
         <form action="">
           <input type="text" name="" id="iyc-input" />
           <button type="submit" id="iyc-btn"><svg></svg></button>
-          <p class="iyc-conclusion"></p>
         </form>
+        <p class="iyc-conclusion"></p>
+      </section>
+      <section class="rock-paper-scissors">
+        <h2 class="title">Камінь - ножиці - папір</h2>
+        <ul class="rps-options">
+          <li class="rps-option" id="rps-option"><svg></svg></li>
+          <li class="rps-option" id="rps-option"><svg></svg></li>
+          <li class="rps-option" id="rps-option"><svg></svg></li>
+        </ul>
+        <p class="rps-conclusion"></p>
+        <p class="rps-ai-choice"></p>
+        <ul class="rps-scoretab">
+          <li class="rps-score-item"><p class="rps-score">Рахунок:</p></li>
+          <li class="rps-score-item">
+            <p class="rps-score" id="rps-score">
+              Комп'тер - <span id="ai-score"></span>
+            </p>
+          </li>
+          <li class="rps-score-item">
+            <p class="rps-score" id="rps-score">
+              Ви - <span id="user-score"></span>
+            </p>
+          </li>
+        </ul>
       </section>
     </main>
     <footer></footer>
