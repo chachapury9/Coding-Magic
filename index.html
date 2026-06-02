@@ -51,21 +51,27 @@
 
       <section class="word-guesser"></section>
 
-      <section class="rock-paper-scissors">
+      <section class="container rock-paper-scissors">
         <h2 class="title">Камінь - ножиці - папір</h2>
         <ul class="rps-options">
-          <li class="rps-option" id="rock">
-            <button><svg></svg></button>
+          <li class="rps-option">
+            <button class="rps-btn" id="rock">
+              <svg><use href="./images/stone.svg"></use></svg>
+            </button>
           </li>
-          <li class="rps-option" id="scissors">
-            <button><svg></svg></button>
+          <li class="rps-option">
+            <button class="rps-btn" id="scissors">
+              <svg><use href="./images/scissors.svg"></use></svg>
+            </button>
           </li>
-          <li class="rps-option" id="paper">
-            <button><svg></svg></button>
+          <li class="rps-option">
+            <button class="rps-btn" id="paper">
+              <svg><use href="./images/paper.svg"></use></svg>
+            </button>
           </li>
         </ul>
-        <p class="rps-conclusion"></p>
-        <p class="rps-ai-choice"></p>
+        <p id="rpsConclusion"></p>
+        <p class="rps-ai-choice">Варіант комп’ютера</p>
         <ul class="rps-scoretab">
           <li class="rps-score-item"><p class="rps-score">Рахунок:</p></li>
           <li class="rps-score-item">

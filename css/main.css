@@ -70,3 +70,55 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+
+.rps-btn {
+  background-color: black;
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+  border-color: transparent;
+  padding: 10px;
+}
+
+.rps-option {
+  height: 60px;
+}
+
+.rps-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 38px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 36px;
+  position: relative;
+}
+
+#rpsConclusion {
+  text-align: center;
+}
+
+.rps-ai-choice {
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 182px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border-color: transparent;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 12px;
+  position: relative;
+}
+
+.rps-scoretab {
+  position: absolute;
+  left: 10px;
+}

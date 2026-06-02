@@ -1,8 +1,8 @@
 const rock = document.getElementById("rock");
 const paper = document.getElementById("paper");
 const scissors = document.getElementById("scissors");
-const choices = ["rock", "paper", "scissors"];
-const result = document.querySelector(".rps-conclusion");
+const choices = ["Камінь", "Ножиці", "Папір"];
+const result = document.getElementById("rpsConclusion");
 const aiChoiceDisplayer = document.querySelector(".rps-ai-choice");
 const aiScoreDisplayer = document.getElementById("ai-score");
 const playerScoreDisplayer = document.getElementById("user-score");
@@ -17,17 +17,20 @@ playerScoreDisplayer.textContent = playerScore;
 rock.addEventListener("click", () => {
   aiChoice = choices[Math.floor(Math.random() * 3)];
   console.log(aiChoice);
-  playerChoice = "rock";
+  playerChoice = "Камінь";
 
   if (aiChoice === playerChoice) {
     result.textContent = "Нічия!";
-  } else if (aiChoice === "paper") {
-    result.textContent = "Ви програли раунд!";
+  } else if (aiChoice === "Папір") {
+    result.textContent = "Комп'ютер виграв раунд!";
+    result.style.color = "#990000";
     aiScore++;
-  } else if (aiChoice === "scissors") {
+  } else if (aiChoice === "Ножиці") {
     result.textContent = "Ви виграли раунд!";
+    result.style.color = "#039900";
     playerScore++;
   }
+  aiChoiceDisplayer.textContent = aiChoice;
   aiScoreDisplayer.textContent = aiScore;
   playerScoreDisplayer.textContent = playerScore;
 });
@@ -35,17 +38,20 @@ rock.addEventListener("click", () => {
 paper.addEventListener("click", () => {
   aiChoice = choices[Math.floor(Math.random() * 3)];
   console.log(aiChoice);
-  playerChoice = "paper";
+  playerChoice = "Папір";
 
   if (aiChoice === playerChoice) {
     result.textContent = "Нічия!";
-  } else if (aiChoice === "scissors") {
-    result.textContent = "Ви програли раунд!";
+  } else if (aiChoice === "Ножиці") {
+    result.textContent = "Комп'ютер виграв раунд!";
+    result.style.color = "#990000";
     aiScore++;
-  } else if (aiChoice === "rock") {
+  } else if (aiChoice === "Камінь") {
     result.textContent = "Ви виграли раунд!";
+    result.style.color = "#039900";
     playerScore++;
   }
+  aiChoiceDisplayer.textContent = aiChoice;
   aiScoreDisplayer.textContent = aiScore;
   playerScoreDisplayer.textContent = playerScore;
 });
@@ -53,17 +59,20 @@ paper.addEventListener("click", () => {
 scissors.addEventListener("click", () => {
   aiChoice = choices[Math.floor(Math.random() * 3)];
   console.log(aiChoice);
-  playerChoice = "scissors";
+  playerChoice = "Ножиці";
 
   if (aiChoice === playerChoice) {
     result.textContent = "Нічия!";
-  } else if (aiChoice === "rock") {
-    result.textContent = "Ви програли раунд!";
+  } else if (aiChoice === "Камінь") {
+    result.textContent = "Комп'ютер виграв раунд!";
+    result.style.color = "#990000";
     aiScore++;
-  } else if (aiChoice === "paper") {
+  } else if (aiChoice === "Папір") {
     result.textContent = "Ви виграли раунд!";
+    result.style.color = "#039900";
     playerScore++;
   }
+  aiChoiceDisplayer.textContent = aiChoice;
   aiScoreDisplayer.textContent = aiScore;
   playerScoreDisplayer.textContent = playerScore;
 });
