@@ -18,9 +18,13 @@ body {
   margin-bottom: 36px;
 }
 
+section {
+  margin-bottom: 36px;
+}
+
 .container {
-  width: 833px;
-  padding: 0 257px;
+  width: 915px;
+  padding: 0 175px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -80,8 +84,13 @@ body {
   padding: 10px;
 }
 
-.rps-option {
-  height: 60px;
+.rps-svg {
+  width: 40px;
+  height: 40px;
+}
+
+.rock-paper-scissors {
+  position: relative;
 }
 
 .rps-options {
@@ -92,11 +101,8 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 38px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-bottom: 36px;
-  position: relative;
+  padding-left: 0px;
 }
 
 #rpsConclusion {
@@ -115,10 +121,48 @@ body {
   border-color: transparent;
   font-family: "Montserrat Alternates", sans-serif;
   font-size: 12px;
-  position: relative;
 }
 
 .rps-scoretab {
   position: absolute;
-  left: 10px;
+  right: 104px;
+  top: -30px;
+}
+
+.rps-wrapper {
+  position: relative;
+}
+
+.calculator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 38px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px;
+}
+
+.operators {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 62px;
+}
+
+#numb1,
+#numb2 {
+  padding: 10px 20px;
+  background-color: #d7d7d7;
+  border-color: transparent;
+  border-radius: 20px;
+  font-size: 12px;
+  color: #7e7e7e;
 }

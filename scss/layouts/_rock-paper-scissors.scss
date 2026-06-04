@@ -7,17 +7,21 @@
   padding: 10px;
 }
 
-.rps-option {
-  height: 60px;
+.rps-svg {
+  width: 40px;
+  height: 40px;
+}
+
+.rock-paper-scissors {
+  position: relative;
 }
 
 .rps-options {
   display: flex;
   justify-content: center;
   gap: 38px;
-  align-items: center;
   margin-bottom: 36px;
-  position: relative;
+  padding-left: 0px;
 }
 
 #rpsConclusion {
@@ -36,10 +40,14 @@
   border-color: transparent;
   font-family: "Montserrat Alternates", sans-serif;
   font-size: 12px;
-  position: relative;
 }
 
 .rps-scoretab {
   position: absolute;
-  left: 10px;
+  right: 104px;
+  top: -30px;
+}
+
+.rps-wrapper {
+  position: relative;
 }

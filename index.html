@@ -9,6 +9,11 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap"
+      rel="stylesheet" />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
@@ -53,42 +58,60 @@
 
       <section class="container rock-paper-scissors">
         <h2 class="title">Камінь - ножиці - папір</h2>
-        <ul class="rps-options">
-          <li class="rps-option">
-            <button class="rps-btn" id="rock">
-              <svg><use href="./images/stone.svg"></use></svg>
-            </button>
-          </li>
-          <li class="rps-option">
-            <button class="rps-btn" id="scissors">
-              <svg><use href="./images/scissors.svg"></use></svg>
-            </button>
-          </li>
-          <li class="rps-option">
-            <button class="rps-btn" id="paper">
-              <svg><use href="./images/paper.svg"></use></svg>
-            </button>
-          </li>
-        </ul>
+        <div class="rps-wrapper">
+          <ul class="rps-options">
+            <li class="rps-option">
+              <button class="rps-btn" id="rock">
+                <svg class="rps-svg"><use href="./images/stone.svg"></use></svg>
+              </button>
+            </li>
+            <li class="rps-option">
+              <button class="rps-btn" id="scissors">
+                <svg class="rps-svg">
+                  <use href="./images/scissors.svg"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="rps-option">
+              <button class="rps-btn" id="paper">
+                <svg class="rps-svg"><use href="./images/paper.svg"></use></svg>
+              </button>
+            </li>
+          </ul>
+          <ul class="rps-scoretab">
+            <li class="rps-score-item"><p class="rps-score">Рахунок:</p></li>
+            <li class="rps-score-item">
+              <p class="rps-score" id="rps-score">
+                Комп'тер - <span id="ai-score"></span>
+              </p>
+            </li>
+            <li class="rps-score-item">
+              <p class="rps-score" id="rps-score">
+                Ви - <span id="user-score"></span>
+              </p>
+            </li>
+          </ul>
+        </div>
+
         <p id="rpsConclusion"></p>
         <p class="rps-ai-choice">Варіант комп’ютера</p>
-        <ul class="rps-scoretab">
-          <li class="rps-score-item"><p class="rps-score">Рахунок:</p></li>
-          <li class="rps-score-item">
-            <p class="rps-score" id="rps-score">
-              Комп'тер - <span id="ai-score"></span>
-            </p>
-          </li>
-          <li class="rps-score-item">
-            <p class="rps-score" id="rps-score">
-              Ви - <span id="user-score"></span>
-            </p>
-          </li>
+      </section>
+      <section class="container calculator">
+        <input type="text" id="numb1" placeholder="Введіть число" />
+        <ul class="operators">
+          <li class="operator-item"><button id="plus">+</button></li>
+          <li class="operator-item"><button id="multiply-by">*</button></li>
+          <li class="operator-item"><button id="minus">-</button></li>
+          <li class="operator-item"><button id="devide-by">/</button></li>
         </ul>
+        <input type="text" id="numb2" placeholder="Введіть число" />
+        <p id="equals">=</p>
+        <p id="calculation-result">Результат</p>
       </section>
     </main>
     <footer></footer>
     <script type="module" src="./js/intercalary.js"></script>
     <script type="module" src="./js/rock-paper-scissors.js"></script>
+    <script type="module" src="./js/calculator.js"></script>
   </body>
 </html>
