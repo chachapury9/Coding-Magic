@@ -54,7 +54,7 @@
         </div>
       </section>
 
-      <section class="word-guesser"></section>
+      <section class="number-guesser"></section>
 
       <section class="container rock-paper-scissors">
         <h2 class="title">Камінь - ножиці - папір</h2>
@@ -119,10 +119,31 @@
           <p id="calculation-result">Результат</p>
         </div>
       </section>
+      <section class="container team-slider">
+        <h3 class="title">Наша команда</h3>
+        <div class="team-slider-wrapper">
+          <button id="team-left" class="team-btn">
+            <svg class="team-svg">
+              <use href="./images/Vector 231.svg"></use>
+            </svg>
+          </button>
+          <div class="slider">
+            <img src="" alt="" id="team-img" />
+            <p id="team-name"></p>
+            <p id="team-desc"></p>
+          </div>
+          <button id="team-right" class="team-btn">
+            <svg class="team-svg">
+              <use href="./images/Vector 230.svg"></use>
+            </svg>
+          </button>
+        </div>
+      </section>
     </main>
     <footer></footer>
     <script type="module" src="./js/intercalary.js"></script>
     <script type="module" src="./js/rock-paper-scissors.js"></script>
     <script type="module" src="./js/calculator.js"></script>
+    <script type="module" src="./js/slider.js"></script>
   </body>
 </html>
