@@ -206,6 +206,212 @@ button {
   color: #7e7e7e;
 }
 
+.title-second {
+  font-family: "Montserrat Alternates";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-top: 36px;
+}
+
+.calc-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.input-num {
+  width: 90px;
+  height: 12px;
+  padding-top: 10px;
+  padding-right: 45px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  gap: 10px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  position: relative;
+  bottom: 3px;
+  left: 5px;
+  -webkit-box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+  background-color: rgb(215, 215, 215);
+}
+
+.input-num::-webkit-input-placeholder {
+  font-family: "Montserrat Alternates";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.input-num::-moz-placeholder {
+  font-family: "Montserrat Alternates";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.input-num:-ms-input-placeholder {
+  font-family: "Montserrat Alternates";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.input-num::-ms-input-placeholder {
+  font-family: "Montserrat Alternates";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.input-num::placeholder {
+  font-family: "Montserrat Alternates";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.btn-find {
+  width: 35px;
+  height: 35px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  gap: 10px;
+  padding-top: 7px;
+  padding-bottom: 25px;
+  padding-left: 7px;
+  padding-right: 25px;
+  background-color: black;
+  -webkit-box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
+.calc-list-item {
+  margin-top: 36px;
+}
+
+.false {
+  color: red;
+}
+
+.true {
+  color: rgb(3, 153, 0);
+}
+
+.title-second {
+  font-family: "Montserrat Alternates";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-top: 36px;
+}
+
+.calc-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.input-num {
+  width: 90px;
+  height: 12px;
+  padding-top: 10px;
+  padding-right: 45px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  gap: 10px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  position: relative;
+  bottom: 3px;
+  left: 5px;
+  -webkit-box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+  background-color: rgb(215, 215, 215);
+}
+
+.input-num::-webkit-input-placeholder {
+  font-family: "Montserrat Alternates";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.input-num::-moz-placeholder {
+  font-family: "Montserrat Alternates";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.input-num:-ms-input-placeholder {
+  font-family: "Montserrat Alternates";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.input-num::-ms-input-placeholder {
+  font-family: "Montserrat Alternates";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.input-num::placeholder {
+  font-family: "Montserrat Alternates";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.btn-find {
+  width: 35px;
+  height: 35px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  gap: 10px;
+  padding-top: 7px;
+  padding-bottom: 25px;
+  padding-left: 7px;
+  padding-right: 25px;
+  background-color: black;
+  -webkit-box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
+.calc-list-item {
+  margin-top: 36px;
+}
+
+.false {
+  color: red;
+}
+
+.true {
+  color: rgb(3, 153, 0);
+}
+
 .team-slider-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
