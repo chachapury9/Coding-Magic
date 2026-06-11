@@ -23,7 +23,7 @@ let dino = {
   jumpforce: 200,
   velocity: 0,
 
-  draw(x, y, hitboxR) {
+  draw(x, y) {
     ctx.drawImage(dinoImg1, x, y, 50, 50);
   },
 
@@ -100,7 +100,7 @@ const gameLoop = setInterval(function () {
 
   cactus2.return();
 
-  ctx.font = "36px sans-serif";
+  ctx.font = "24px sans-serif";
   ctx.textAlign = "left";
   ctx.fillText(score, 650, 50);
   ctx.fillText(highScore, 600, 50);
