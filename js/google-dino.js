@@ -7,13 +7,13 @@ let highScore = 0;
 
 //image storage:
 let dinoImg1 = new Image();
-dinoImg1.src = "../images/google-dino/Chrome_T-Rex_Left_Run.webp";
+dinoImg1.src = "images/google-dino/Chrome_T-Rex_Left_Run.webp";
 
 let cactusImg = new Image();
-cactusImg.src = "../images/google-dino/1_Cactus_Chrome_Dino.webp";
+cactusImg.src = "images/google-dino/1_Cactus_Chrome_Dino.webp";
 
 let dinoImg2 = new Image();
-dinoImg2.src = "../images/google-dino/Chrome_T-Rex_Right_Run.webp";
+dinoImg2.src = "images/google-dino/Chrome_T-Rex_Right_Run.webp";
 
 let dino = {
   onGround: true,
