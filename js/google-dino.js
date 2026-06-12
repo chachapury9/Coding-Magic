@@ -1,5 +1,6 @@
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
+const restart = document.getElementById("google-dino-restart");
 
 let cactusDistance = 0;
 let score = 0;
@@ -14,6 +15,9 @@ cactusImg.src = "images/google-dino/1_Cactus_Chrome_Dino.webp";
 
 let dinoImg2 = new Image();
 dinoImg2.src = "images/google-dino/Chrome_T-Rex_Right_Run.webp";
+
+let groundImg = new Image();
+groundImg.src = "images/google-dino/Chromium_T-Rex-horizon.png";
 
 let dino = {
   onGround: true,
@@ -65,6 +69,33 @@ class Cactus {
     if (dino.x > this.x && this.x > 180 && dino.y > 125) {
       clearInterval(gameLoop);
       console.log("game stopped");
+      ctx.fillText("HI: " + highScore, 550, 50);
+      restart.classList.remove("hide");
+    }
+  }
+}
+
+class Ground {
+  constructor(x, y, speed) {
+    this.x = x;
+    this.y = y;
+    this.speed = speed;
+  }
+
+  draw() {
+    ctx.drawImage(groundImg, this.x, this.y);
+  }
+
+  move() {
+    this.x -= this.speed;
+  }
+
+  loop() {
+    if (this.x < -1200) {
+      let loopGround = new Ground(this.x + 1800, this.y, 5);
+      loopGround.draw();
+      loopGround.move();
+      loopGround.loop();
     }
   }
 }
@@ -75,16 +106,22 @@ document.body.addEventListener("keydown", (e) => {
   }
 });
 
+restart.addEventListener("click", () => {
+  location.reload();
+});
+
 let cactus = new Cactus(1000, 172, 5, 30, 70);
+let ground = new Ground(-100, 220, 5);
 let cactus2 = new Cactus(cactusDistance, 172, 5, 30, 70);
 
 const gameLoop = setInterval(function () {
   cactusDistance = Math.round(Math.random() * (1500 - 1050) + 1050);
   ctx.clearRect(0, 0, 700, 300);
-  ctx.beginPath();
-  ctx.moveTo(0, 220);
-  ctx.lineTo(700, 220);
-  ctx.stroke();
+
+  ground.draw();
+  ground.move();
+  ground.loop();
+
   dino.draw(dino.x, dino.y);
   dino.fall();
 
@@ -103,7 +140,6 @@ const gameLoop = setInterval(function () {
   ctx.font = "24px sans-serif";
   ctx.textAlign = "left";
   ctx.fillText(score, 650, 50);
-  ctx.fillText(highScore, 600, 50);
 }, 16);
 
 setInterval(function () {
