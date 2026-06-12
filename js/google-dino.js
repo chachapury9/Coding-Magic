@@ -5,6 +5,7 @@ const restart = document.getElementById("google-dino-restart");
 let cactusDistance = 0;
 let score = 0;
 let highScore = 0;
+let isGameOn = true;
 
 //image storage:
 let dinoImg1 = new Image();
@@ -24,7 +25,7 @@ let dino = {
   x: 200,
   y: 185,
   force: 5,
-  jumpforce: 200,
+  jumpforce: 150,
   velocity: 0,
 
   draw(x, y) {
@@ -67,10 +68,10 @@ class Cactus {
 
   collide() {
     if (dino.x > this.x && this.x > 180 && dino.y > 125) {
-      clearInterval(gameLoop);
       console.log("game stopped");
       ctx.fillText("HI: " + highScore, 550, 50);
       restart.classList.remove("hide");
+      isGameOn = false;
     }
   }
 }
@@ -107,39 +108,50 @@ document.body.addEventListener("keydown", (e) => {
 });
 
 restart.addEventListener("click", () => {
-  location.reload();
+  isGameOn = true;
+  restart.classList.add("hide");
+  cactus.x = 1000;
+  ground.x = -100;
+  cactus2.x = cactusDistance;
+  score = 0;
 });
 
 let cactus = new Cactus(1000, 172, 5, 30, 70);
 let ground = new Ground(-100, 220, 5);
 let cactus2 = new Cactus(cactusDistance, 172, 5, 30, 70);
 
-const gameLoop = setInterval(function () {
-  cactusDistance = Math.round(Math.random() * (1500 - 1050) + 1050);
-  ctx.clearRect(0, 0, 700, 300);
+let gameLoop = setInterval(function () {
+  if (isGameOn) {
+    cactusDistance = Math.round(Math.random() * (1500 - 1050) + 1050);
+    ctx.clearRect(0, 0, 700, 300);
 
-  ground.draw();
-  ground.move();
-  ground.loop();
+    ground.draw();
+    ground.move();
+    ground.loop();
 
-  dino.draw(dino.x, dino.y);
-  dino.fall();
+    dino.draw(dino.x, dino.y);
+    dino.fall();
 
-  cactus.draw();
-  cactus.collide();
-  cactus.move();
+    cactus.draw();
+    cactus.collide();
+    cactus.move();
 
-  cactus.return();
+    cactus.return();
 
-  cactus2.draw();
-  cactus2.collide();
-  cactus2.move();
+    cactus2.draw();
+    cactus2.collide();
+    cactus2.move();
 
-  cactus2.return();
+    cactus2.return();
 
-  ctx.font = "24px sans-serif";
-  ctx.textAlign = "left";
-  ctx.fillText(score, 650, 50);
+    ctx.font = "24px sans-serif";
+    ctx.textAlign = "left";
+    ctx.fillText(score, 650, 50);
+
+    if (highScore < score) {
+      highScore = score;
+    }
+  }
 }, 16);
 
 setInterval(function () {
