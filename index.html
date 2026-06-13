@@ -24,24 +24,28 @@
   </head>
   <body>
     <header class="header">
-      <nav class="nav">
-        <div class="logo">
-          <svg class="icon"></svg>
-          <h1 class="top-logo">Coding</h1>
-          <p class="sub-logo">Magic</p>
-        </div>
-        <ul class="nav-list">
-          <li class="nav-item"><a href="" class="nav-link">Інтерактив</a></li>
-          <li class="nav-item"><a href="" class="nav-link">Наша команда</a></li>
-          <li class="nav-item"><a href="" class="nav-link">Контакти</a></li>
-        </ul>
-        <ul class="nav-user-pref">
-          <li class="nav-pref"><button id="themeSwitch"></button></li>
-          <li class="nav-pref">
-            <p>Вітаємо, <span id="username"></span>!</p>
-          </li>
-        </ul>
-      </nav>
+      <div class="container">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <svg class="logo">
+                <use href="./images/symbol-defs.svg#icon-logo"></use>
+              </svg>
+            </li>
+            <li class="nav-item"><a href="" class="nav-link">Інтерактив</a></li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Наша команда</a>
+            </li>
+            <li class="nav-item"><a href="" class="nav-link">Контакти</a></li>
+          </ul>
+          <ul class="nav-user-pref">
+            <li class="nav-pref"><button id="themeSwitch">theme</button></li>
+            <li class="nav-pref">
+              <p>Вітаємо, <span id="username"></span>!</p>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <h1 class="site-title">Популярні інетрактивні ігри</h1>
@@ -71,7 +75,7 @@
             <form action="" class="guess-form">
               <input type="input" name="" class="input-num" />
               <button type="submit" class="btn-find">
-                <img src="images/Group 104.svg" alt="" />
+                <img src="./images/Group 104.svg" alt="" />
               </button>
             </form>
           </li>
@@ -154,7 +158,7 @@
         <div class="team-slider-wrapper">
           <button id="team-left" class="team-btn">
             <svg class="team-svg">
-              <use href="./images/Vector 231.svg"></use>
+              <use href="./images/symbol-defs.svg#icon-left"></use>
             </svg>
           </button>
           <div class="slider">
@@ -164,7 +168,7 @@
           </div>
           <button id="team-right" class="team-btn">
             <svg class="team-svg">
-              <use href="./images/Vector 230.svg"></use>
+              <use href="././images/symbol-defs.svg#icon-right"></use>
             </svg>
           </button>
         </div>
@@ -189,5 +193,6 @@
     <script type="module" src="./js/slider.js"></script>
     <script type="module" src="./js/google-dino.js"></script>
     <script type="module" src="./js/guess-number.js"></script>
+    <script type="module" src="./js/theme.js"></script>
   </body>
 </html>

@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 ul {
   list-style: none;
 }
@@ -26,11 +31,27 @@ button {
   cursor: pointer;
 }
 
+.black {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  fill: #ffffff !important;
+}
+
+.white-border {
+  border: 3px solid #ffffff !important;
+}
+
 .container {
   width: 915px;
   padding: 0 175px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.logo {
+  width: 93px;
+  height: 38px;
+  fill: #000000;
 }
 
 .intercalary-form {
@@ -486,4 +507,43 @@ button {
 
 .hide {
   display: none;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-user-pref {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
+}
+
+.header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 38px;
+}
+
+.nav-link {
+  color: #000000;
 }

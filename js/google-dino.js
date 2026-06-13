@@ -118,7 +118,7 @@ restart.addEventListener("click", () => {
 
 let cactus = new Cactus(1000, 172, 5, 30, 70);
 let ground = new Ground(-100, 220, 5);
-let cactus2 = new Cactus(cactusDistance, 172, 5, 30, 70);
+let cactus2 = new Cactus(650 + cactusDistance, 172, 5, 30, 70);
 
 let gameLoop = setInterval(function () {
   if (isGameOn) {
