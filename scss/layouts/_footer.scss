@@ -1,0 +1,38 @@
+.footer {
+  background: $white;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.footer-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-svg {
+  width: 165px;
+  height: 70px;
+}
+
+.footer-input {
+  padding: 10px 20px;
+  background-color: $shade-of-grey;
+  border-color: transparent;
+  border-radius: 20px;
+  font-size: 12px;
+  color: #7e7e7e;
+  margin-right: 36px;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.footer-btn {
+  background-color: black;
+  border: none;
+  font-size: 12px;
+  font-weight: 400;
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+  font-family: "Montserrat Alternates", sans-serif;
+}

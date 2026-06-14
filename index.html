@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
+    <div class="container"></div>
     <header class="header">
       <div class="container">
         <nav class="nav">
@@ -39,7 +40,13 @@
             <li class="nav-item"><a href="" class="nav-link">Контакти</a></li>
           </ul>
           <ul class="nav-user-pref">
-            <li class="nav-pref"><button id="themeSwitch">theme</button></li>
+            <li class="nav-pref">
+              <button id="themeSwitch">
+                <svg class="header-svg">
+                  <use id="theme-visual" href="./images/Group71.svg"></use>
+                </svg>
+              </button>
+            </li>
             <li class="nav-pref">
               <p>Вітаємо, <span id="username"></span>!</p>
             </li>
@@ -222,7 +229,45 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="container">
+        <ul class="footer-list">
+          <li class="footer-item">
+            <svg class="footer-svg">
+              <use href="./images/symbol-defs.svg#icon-logo"></use>
+            </svg>
+          </li>
+          <li class="footer-item">
+            <ul class="footer-contacts">
+              <li class="footer-contact-item">
+                <p class="contact">Тел: +38 (123) 456 78 90</p>
+              </li>
+              <li class="footer-contact-item">
+                <p class="contact">E-Mail: codingmagic@gmail.com</p>
+              </li>
+              <li class="footer-contact-item">
+                <p class="contact">Facebook: CodingMagic</p>
+              </li>
+              <li class="footer-contact-item">
+                <p class="contact">Twitter: CodingMagic</p>
+              </li>
+              <li class="footer-contact-item">
+                <p class="contact">Instagram: CodingMagic</p>
+              </li>
+            </ul>
+          </li>
+          <li class="footer-item">
+            <form action="" class="footer-form">
+              <input
+                type="text"
+                class="footer-input"
+                placeholder="Ваша ел. адреса..." />
+              <button class="footer-btn" type="submit">Підписатись</button>
+            </form>
+          </li>
+        </ul>
+      </div>
+    </footer>
     <script type="module" src="./js/intercalary.js"></script>
     <script type="module" src="./js/rock-paper-scissors.js"></script>
     <script type="module" src="./js/calculator.js"></script>
