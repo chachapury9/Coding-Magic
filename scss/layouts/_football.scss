@@ -1,24 +1,24 @@
-.football-title{
-  font-family: "Montserrat Alternates",sans-serif;
-font-weight: 400;
-font-size: 16px;
-line-height: 100%;
-letter-spacing: 0%;
-text-align: center;
+.football-title {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
 }
-.grass{
-width: 720px;
-height: 220px;
-border-radius: 37px;
-border-width: 2px;
-background: rgba(90, 187, 88, 1);
-border: 2px solid rgba(0, 0, 0, 1);
-position: relative; 
-  overflow: hidden; 
-  margin-left: 360px;
+.grass {
+  width: 720px;
+  height: 220px;
+  border-radius: 37px;
+  border-width: 2px;
+  background: rgba(90, 187, 88, 1);
+  border: 2px solid rgba(0, 0, 0, 1);
+  position: relative;
+  overflow: hidden;
+
+  margin: 0 auto;
   margin-top: 36px;
 }
-
 
 .ball {
   width: 50px;
@@ -26,5 +26,5 @@ position: relative;
   position: absolute;
   left: 0;
   top: 0;
- transition-duration: 300ms;
+  transition-duration: 300ms;
 }

@@ -365,7 +365,7 @@ body {
   border: 2px solid rgb(0, 0, 0);
   position: relative;
   overflow: hidden;
-  margin-left: 360px;
+  margin: 0 auto;
   margin-top: 36px;
 }
 
@@ -558,6 +558,10 @@ body {
   display: none;
 }
 
+#canvas {
+  background-color: white;
+}
+
 ul {
   list-style: none;
 }
@@ -742,49 +746,4 @@ section {
 .header-svg {
   width: 40px;
   height: 20px;
-}
-
-.footer {
-  background: #ffffff;
-  padding-top: 75px;
-  padding-bottom: 75px;
-}
-
-.footer-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.footer-svg {
-  width: 165px;
-  height: 70px;
-}
-
-.footer-input {
-  padding: 10px 20px;
-  background-color: #d7d7d7;
-  border-color: transparent;
-  border-radius: 20px;
-  font-size: 12px;
-  color: #7e7e7e;
-  margin-right: 36px;
-  font-family: "Montserrat Alternates", sans-serif;
-}
-
-.footer-btn {
-  background-color: black;
-  border: none;
-  font-size: 12px;
-  font-weight: 400;
-  color: white;
-  padding: 10px;
-  border-radius: 20px;
-  font-family: "Montserrat Alternates", sans-serif;
 }
