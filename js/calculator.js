@@ -29,6 +29,9 @@ minus.addEventListener("click", () => {
 });
 
 devision.addEventListener("click", () => {
+  if (num2 === 0) {
+    result.textContent = "Ділити на нуль не можна";
+  }
   equasion = number1 / number2;
   result.textContent = equasion;
 });
