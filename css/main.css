@@ -379,6 +379,96 @@ body {
           transition-duration: 300ms;
 }
 
+.title-3-num {
+  font-family: "Montserrat Alternates" sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.list-num {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 36px;
+  margin-top: 36px;
+  margin-right: 25px;
+}
+
+.first-inp {
+  border-radius: 20px;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  gap: 10px;
+  background-color: rgb(215, 215, 215);
+  -webkit-box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
+.second-inp {
+  border-radius: 20px;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  gap: 10px;
+  background-color: rgb(215, 215, 215);
+  -webkit-box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
+.third-inp {
+  border-radius: 20px;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  gap: 10px;
+  background-color: rgb(215, 215, 215);
+  -webkit-box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
+.biggest-num {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.sub-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  border-radius: 20px;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  gap: 10px;
+  background: rgb(0, 0, 0);
+  text-align: center;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: white;
+  margin-top: 36px;
+  margin-bottom: 36px;
+}
+
 .title-second {
   font-family: "Montserrat Alternates";
   font-weight: 400;
