@@ -26,7 +26,53 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <div class="container"></div>
+
+            <button class="btn-open" data-modal-open>відкрити модалку</button>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="btn-close" data-modal-close>
+          <img src="./images/modal/Vector 234.png" alt="" />
+        </button>
+        <h2 class="modal-title">
+          Привіт! <br />
+          Ви потрапили на сайт інтерактивних ігор та завдань<br />
+          Надіємось, що вам сподобається і ви отримаєте позитивні емоції!<br />
+          Бажаємо Вам гарно провести час!<br />
+        </h2>
+        <p class="text-modal">Введіть своє ім’я:</p>
+        <form action="" class="modal-form">
+          <input
+            type="text"
+            name=""
+            id=""
+            placeholder="Ваше ім’я..."
+            class="inp-modal"
+          />
+          <br />
+          <button type="submit" class="modal-btn" data-modal-close data-modal-open-thank>Зберегти</button>
+        </form>
+        <img src="./images/modal/game-development 1.png" alt="" class="puzzle-img">
+        <img src="./images/modal/puzzle 1.png" alt="" class="sword-img">
+        <img src="./images/modal/sword 1.png" alt="" class="tic-tac-toe-img">
+        <img src="./images/modal/tic-tac-toe 1.png" alt="" class="game-development-img">
+      </div>
+    </div>
+
+     <div class="backdrop-thank is-hidden" data-modal-thank>
+      <div class="modal-thank">
+        <button class="btn-close-thank" data-modal-close-thank data-modal-close>
+          <img src="./images/modal/Vector 234.png" alt="" />
+        </button>
+        <h2 class="modal-title-thank">
+          Дякую за підписку!
+        </h2>
+        <img src="./images/modal/Group 133.png" alt="" class="modal-img-thank">
+      </div>
+    </div>
+
+
+
+
     <header class="header">
       <div class="container">
         <nav class="nav">
@@ -296,6 +342,7 @@
     <script type="module" src="./js/time-calculator.js"></script>
     <script type="module" src="./js/football.js"></script>
     <script type="module" src="./js/3-numbers.js"></script>
+    <script type="module" src="./js/modal.js"></script>
     <script type="module" src="./js/theme.js"></script>
   </body>
 </html>
