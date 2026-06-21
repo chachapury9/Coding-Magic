@@ -103,6 +103,7 @@ class Ground {
 
 document.body.addEventListener("keydown", (e) => {
   if (e.key === " " && dino.onGround === true) {
+    e.preventDefault();
     dino.y -= dino.jumpforce;
   }
 });
